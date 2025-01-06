@@ -1,3 +1,5 @@
+
+
 import streamlit as st
 import spacy
 import pickle
@@ -32,6 +34,3 @@ def run_ml_app():
             st.error("The news is **FAKE**.")
         elif prediction[0] == 1:
             st.success("The news is **REAL**.")
-
-# if __name__ == '__main__':
-#     main()
